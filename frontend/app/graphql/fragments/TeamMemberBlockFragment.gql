@@ -1,0 +1,21 @@
+fragment TeamMemberBlockFragment on TeamMemberBlock{
+    name
+    image {
+        id
+        title
+        file
+        width
+        height
+        createdAt
+        fileSize
+        fileHash
+        aspectRatio
+        sizes               
+        isSvg
+    }
+    role
+    biography
+    linkedin
+    twitter
+    __typename
+}

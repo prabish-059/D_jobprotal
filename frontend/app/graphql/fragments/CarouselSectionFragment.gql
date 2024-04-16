@@ -1,0 +1,12 @@
+#import "../fragments/CarouselImageBlockFragment.gql"
+
+
+fragment CarouselSectionFragment on CarouselSection{
+  heading
+  description
+  hash
+  __typename
+  images {
+  	...CarouselImageBlockFragment
+    }
+}

@@ -1,0 +1,9 @@
+#import "../fragments/FaqBlockFragment.gql"
+
+fragment FaqSectionFragment on FaqSection{
+    heading
+    description
+    faqs{
+        ...FaqBlockFragment
+    }
+}

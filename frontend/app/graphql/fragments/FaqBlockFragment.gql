@@ -1,0 +1,10 @@
+#import "../fragments/ButtonBlockFragment.gql"
+
+
+fragment FaqBlockFragment on FaqBlock{
+    question
+    answer
+    button{
+        ...ButtonBlockFragment
+    }
+}

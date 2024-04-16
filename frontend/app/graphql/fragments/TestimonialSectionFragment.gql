@@ -1,0 +1,8 @@
+#import "../fragments/TestimonialBlockFragment.gql"
+fragment TestimonialSectionFragment on TestimonialSection{
+    heading
+    description
+    testimonials{
+        ...TestimonialBlockFragment
+    }
+}

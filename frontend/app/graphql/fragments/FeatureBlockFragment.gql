@@ -1,0 +1,26 @@
+#import "../fragments/ButtonBlockFragment.gql"
+
+fragment FeatureBlockFragment on FeatureBlock{
+    __typename
+    blockType
+    field             
+    heading
+    description
+    image {
+        id
+        title
+        file
+        width
+        height
+        createdAt
+        fileSize
+        fileHash
+        aspectRatio
+        sizes               
+        isSvg
+    }
+    button {
+        ...ButtonBlockFragment
+    }
+}
+

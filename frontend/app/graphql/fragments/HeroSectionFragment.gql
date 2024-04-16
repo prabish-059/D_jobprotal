@@ -1,0 +1,29 @@
+#import "../fragments/ButtonBlockFragment.gql"
+
+fragment HeroSectionFragment on HeroSection{
+    id
+    blockType
+    field        
+    heading
+    description
+    image {
+        id
+        title
+        file
+        width
+        height
+        createdAt
+        fileSize
+        fileHash
+        aspectRatio
+        sizes               
+        isSvg
+    }
+    hash
+    button {            
+        blockType
+        field
+        ...ButtonBlockFragment
+    }
+}
+

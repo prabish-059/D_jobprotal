@@ -1,0 +1,8 @@
+---
+python_version: python3
+ansistrano_deploy_to: /mnt/persist/www/speedwings_jobportal
+database_name: speedwings_jobportal
+database_user: speedwings_jobportal
+project_slug: speedwings_jobportal
+domain_stage: stage.speedwingshr.com
+domain_prod: speedwingshr.com

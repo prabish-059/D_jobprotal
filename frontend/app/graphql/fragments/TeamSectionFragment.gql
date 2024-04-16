@@ -1,0 +1,9 @@
+#import "../fragments/TeamMemberBlockFragment.gql"
+
+fragment TeamSectionFragment on TeamSection{
+    heading
+    description
+    members{
+        ...TeamMemberBlockFragment
+    }
+}

@@ -1,0 +1,20 @@
+fragment TestimonialBlockFragment on TestimonialBlock{
+    name
+    role
+    organisation
+    quote
+    stars
+    image {
+        id
+        title
+        file
+        width
+        height
+        createdAt
+        fileSize
+        fileHash
+        aspectRatio
+        sizes               
+        isSvg
+    }
+}

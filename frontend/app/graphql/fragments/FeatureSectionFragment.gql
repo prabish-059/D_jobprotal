@@ -1,0 +1,28 @@
+#import "../fragments/FeatureBlockFragment.gql"
+
+fragment FeatureSectionFragment on FeatureSection{
+    id
+    blockType
+    field 
+    heading
+    description
+    hash
+    image {
+        id
+        title
+        file
+        width
+        height
+        createdAt
+        fileSize
+        fileHash
+        aspectRatio
+        sizes               
+        isSvg
+    }  
+    features {              
+        blockType
+        field
+        ...FeatureBlockFragment
+    }
+}

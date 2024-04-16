@@ -1,0 +1,18 @@
+fragment CarouselImageBlockFragment on CarouselImageBlock{
+	image{
+  	id
+    title
+    file
+    width
+    height
+    createdAt
+    fileSize
+    fileHash
+    aspectRatio
+    sizes               
+    isSvg
+    }
+      description
+      heading
+      __typename
+}
